@@ -23,3 +23,7 @@ $ curl -H 'Cookie:a=b;d=e;' localhost:8080/a%20c
  captured: a=b%3Bd=e%3B # <- url encoded broken
  direct: a=b;d=e; 
 ```
+
+### workaround
+
+by using [named capture groups](nginx.conf#L19) this behaviour can be prevented.
